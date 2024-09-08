@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const db = require('./models');
 
 const app = express();
-const port = process.env.PORT || 3000; // Usa el puerto de la variable de entorno, o 3000 si no está definido
+const port = process.env.PORT || 10000; // Usa el puerto de la variable de entorno, o 10000 si no está definido
 
 app.use(bodyParser.json());
 
