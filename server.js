@@ -1,11 +1,10 @@
-// server.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs');
 const db = require('./models');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Usa el puerto de la variable de entorno, o 3000 si no está definido
 
 app.use(bodyParser.json());
 
